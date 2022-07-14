@@ -1,10 +1,143 @@
+/* CSS reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* General rules */
+
 body {
     height: 100vh;
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    background: linear-gradient(#f69d3c, #ebf8e1, #3f87a6);
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header rules */
+header {
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: #2e3f98;
+}
+
+header p {
+    color: #fff;
+}
+
+main img {
+    width: 300px;
+    margin-bottom: 3rem;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+/* animation rules */
+
+.animation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    position: absolute;
+    background: linear-gradient(#3f87a6, #ebf8e1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: left;
+    line-height: 2rem;
+    transform: scale(0);
+    box-shadow: 10px 10px 5px gray;
+    
+}
+
+.panel-scale {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+
+.img-rotate-scale {
+    transform: rotate(-4turn) scale(0);
+    transition: transform 1s;
+}
+
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.flip-button {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #2e3f98;
+    top: 0;
+    box-shadow: 7px 7px 4px #ebf8e1;
+    visibility: visible;
+}
+
+.reset-button {
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #57982e;
+    box-shadow: 7px 7px 4px #ebf8e1;
+    visibility: hidden;
+}
+
+
+
+/* .flip-button:hover {
+    background-color: #f69d3c;
+} */
+
+.flip-button:active {
+    box-shadow: none;
+    transform: translate(7px, 7px);
+}
+
+.reset-button:active {
+    box-shadow: none;
+    transform: translate(7px, 7px);
+}
+
+
+
+/* transpose e transition... in primo luogo il genio gira in senso 
+orario per circa un secondo, successivamente si rimpicciolisce fino a scomparire
+e una volta scomparso appare la tendina con le 3 frasi */

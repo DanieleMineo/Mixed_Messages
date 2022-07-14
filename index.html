@@ -4,15 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style -->
     <link rel="stylesheet" href="style.css">
+    <!-- Title -->
     <title>Mixed Messages</title>
+    <!-- Icon -->
+    <link rel="icon" href="images/GENIO.png">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>Il test funziona</p>
-    <strong>ciao</strong>
-    <main>
-        <p>okok</p>
-    </main>
+    <div class="container">
+        <header>
+            <h1>The SuperPower Genie</h1>
+            
+        </header>
+        <main>
+            <section class="animation">
+            <div id="genie">
+                <img src="images/GENIO.png" alt="the genie">
+            </div>
+            <div id="panel" class="panel">
+                <p>Hello it's me! The genie! I just read your mind and I saw that you are a special person, a kind of an hero! <br>
+                    But what about becoming a <strong>SUPERHERO</strong>?? All right all right i have this three <strong>SUPERPOWERS</strong> for you!</p>
+                <ul>
+                    <li id="power1"></li>
+                    <li id="power2"></li>
+                    <li id="power3"></li>
+                </ul>
+                <p id="recap"></p>
+                <p>Remember, great powers come with great responsibilities! Use them wisely and for good.
+                    If you don't behave well I will know where to find you!<p>
+            </div> 
+            </section> 
+            <div class="buttons">  
+                <div id="button" class="flip-button">Let Me Flip</div>
+                <div id="reset-button" class="reset-button">Restart</div>
+             </div> 
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
