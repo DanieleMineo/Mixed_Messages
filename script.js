@@ -37,7 +37,7 @@ const randomOutput = () => {
     firstPower.innerHTML = randomPower1;
     secondPower.innerHTML = randomPower2;
     thirdPower.innerHTML = randomPower3;
-    recap.innerHTML = `Well well well!! you have ${randomPower1}, ${randomPower2} and you can transform yourself in a ${randomPower3} `;
+    recap.innerHTML = `Well well well!! You can transform yourself in a ${randomPower3} with the power of ${randomPower1} and ${randomPower2}. That sounds pretty cool! `;
 };
 
 button.addEventListener('click', randomOutput);
